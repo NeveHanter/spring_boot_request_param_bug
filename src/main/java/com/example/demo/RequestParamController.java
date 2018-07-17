@@ -12,17 +12,17 @@ import reactor.core.publisher.Mono;
 public class RequestParamController {
 
     @GetMapping("/boolean")
-    public Publisher<Void> withBoolean(@RequestParam(required = false) final Boolean parameter) {
+    public Publisher<Void> withBoolean(final Boolean parameter) {
         return Mono.empty();
     }
 
     @GetMapping("/integer")
-    public Publisher<Void> withInteger(@RequestParam(required = false) final Integer parameter) {
+    public Publisher<Void> withInteger(final Integer parameter) {
         return Mono.empty();
     }
 
     @GetMapping("/string")
-    public Publisher<Void> withString(@RequestParam(required = false) final String parameter) {
+    public Publisher<Void> withString(final String parameter) {
         return Mono.empty();
     }
 }
